@@ -1,0 +1,112 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+
+.login-title {
+    color: #06192e;
+
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    max-height: fit-content; 
+    background-image: url('https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');  
+
+    background-size: cover;
+    background-position: center;
+} 
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(34, 31, 31, 0.1);
+    /* min-width: 500px;  */
+    border-color: #243547;
+
+}
+
+
+.login-label {
+    margin-bottom: 45px;
+    color: #071625;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.login-input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+
+}
+
+
+.error-message {
+    color: red;
+    font-size: medium;
+    align-self: flex-start;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    height: 1rem;
+}
+
+.empty-error-container {
+    height: 1rem;
+}
+
+.input-error {
+    border-color: red;
+}
+
+/* Styling for login buttons */
+.login-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30%;
+    margin-top: 10px;
+}
+
+.login-button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.login-button[type="reset"] {
+    background-color: #dc3545;
+}
+
+.login-button[type="reset"]:hover {
+    background-color: #c82333;
+}   
